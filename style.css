@@ -913,7 +913,7 @@ PRUEBA GRATUITA
 \*-------------------------------------*/
 
 .cta {
-  background: blueviolet no-repeat;
+  background: var(--amarillo) no-repeat;
   background-size: cover;
   background-position: center;
   text-align: center;
