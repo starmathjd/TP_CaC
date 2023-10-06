@@ -21,7 +21,7 @@
 
 
 /*-------------------------------------*\
-    DEFINICIÓN DE LETRA Y DERIVADOS
+    FUENTES
 \*-------------------------------------*/
   --tps: 'Poppins', sans-serif;
 
@@ -180,7 +180,7 @@ DESCRIPCIÓN DE LA PÁGINA
 }
 
 
-.search-form {
+.search {
   background-color: hsl(0, 0%, 20%);
   padding: 3px 20px;
   border-radius: 20px;
@@ -191,37 +191,23 @@ DESCRIPCIÓN DE LA PÁGINA
   margin-right: 20px;
 }
 
-.search-form input {
+.search input {
   background: transparent;
   border: none;
   outline: none;
   color: var(--blanco);
 }
 
-.search-form input::placeholder{
+.search input::placeholder{
   color: var(--blanco2);
 }
 
-.search-form button{
+.search button{
   background-color: transparent;
   color: var(--blanco);
   border: none;
   outline: none;
   cursor: pointer;
-}
-
-.download-btn {
-  left: auto;
-  right: 15px;
-  bottom: 0;
-  transform: rotate(0.25turn) translateY(100%);
-  transform-origin: bottom right;
-  padding: 40px 50px;
-}
-
-.download-btn ion-icon {
-  font-size: 30px;
-  transform: rotate(-0.25turn);
 }
 
 
@@ -273,6 +259,7 @@ DESCRIPCIÓN DE LA PÁGINA
 }
 
 .movie-card {
+  margin: 10px;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -296,7 +283,7 @@ DESCRIPCIÓN DE LA PÁGINA
   transition: var(--trans1);
 }
 
-.movie-card .card-banner:hover { box-shadow: 0 1px 2px hsla(0, 0%, 0%, 0.5); }
+.movie-card .card-banner:hover { box-shadow: 0 1px 20px hsl(210, 2%, 85%); }
 
 .movie-card .card-banner:hover::after { background: hsla(0, 0%, 100%, 0.05); }
 
@@ -580,7 +567,7 @@ DESCRIPCIÓN DE LA PÁGINA
 
 
 .top-rated {
-  background: black no-repeat;
+  background: var(--negro) no-repeat;
   background-size: cover;
   background-position: center;
   padding-block: var(--section-padding);
@@ -985,7 +972,7 @@ PRUEBA GRATUITA
 \*----------------------------------------------------------------------*/
 
 .footer-top {
-  background: rgb(17, 10, 10);
+  background: hsl(0, 25%, 5%);
   background-size: cover;
   background-position: center;
   padding-block: 1px;
@@ -1074,6 +1061,148 @@ PRUEBA GRATUITA
 --------------------------------------------------------------------------
 --------------------------------------------------------------------------
 \*----------------------------------------------------------------------*/
+
+
+/*----------------------------------------------------------------------*\
+--------------------------------- LOGIN ----------------------------------
+\*----------------------------------------------------------------------*/
+
+.form-wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 90vh;
+  margin-bottom: 10px;
+  background: url("./img/pic4.jpg") no-repeat;
+  background-size: cover;
+}
+
+.form-box{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 512px;
+  height: 420px;
+  overflow: hidden;
+  z-index: 2;
+}
+.login-container{
+  position: relative;
+  left: 4px;
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  transition: .5s ease-in-out;
+}
+.register-container{
+  position: absolute;
+  right: -520px;
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  transition: .5s ease-in-out;
+}
+.top-form span{
+  color: var(--blanco);
+  font-size: small;
+  padding: 10px 0;
+  display: flex;
+  justify-content: center;
+}
+.top-form span a{
+  font-weight: var(--fw-500);
+  color: var(--blanco);
+  margin-left: 5px;
+}
+
+.top-form span a:hover{
+  color: var(--amarillo)
+}
+h4{
+  color: var(--blanco);
+  font-size: 30px;
+  text-align: center;
+  padding: 10px 0 30px 0;
+}
+.two-forms{
+  display: flex;
+  gap: 10px;
+}
+.input-field{
+  font-size: 15px;
+  background: var(--gris);
+  color: var(--blanco);
+  height: 50px;
+  width: 100%;
+  padding: 0 10px 0 45px;
+  border: none;
+  border-radius: 30px;
+  outline: none;
+  transition: .2s ease;
+}
+.input-field:is(:hover, :focus){
+  background: var(--gris1);
+}
+::-webkit-input-placeholder{
+  color: var(--blanco);
+}
+.input-box i{
+  position: relative;
+  top: -35px;
+  left: 17px;
+  color: var(--blanco);
+}
+.submit{
+  font-size: var(--t7);
+  font-weight: var(--fw-700);
+  color: var(--blanco);
+  text-transform: uppercase;
+  height: 45px;
+  width: 100%;
+  border-radius: 50px;
+  outline: none;
+  border: 2px solid var(--amarillo);
+  background: var(--negro1);
+  cursor: pointer;
+  transition: .3s ease-in-out;
+}
+.submit:is(:hover, :focus){
+  background: var(--amarillo);
+  color: var(--vazul);
+}
+.two-col{
+  display: flex;
+  justify-content: space-between;
+  color: var(--blanco);
+  font-size: small;
+  margin-top: 10px;
+  gap: 50px;
+}
+.two-col .one{
+  display: flex;
+  gap: 5px;
+  max-width: 20px;;
+}
+.two a{
+  text-decoration: none;
+  color: var(--blanco);
+}
+.two a:hover{
+  color: var(--amarillo)
+}
+
+
+
+/*----------------------------------------------------------------------*\
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+\*----------------------------------------------------------------------*/
+
+/*----------------------------------------------------------------------*\
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+\*----------------------------------------------------------------------*/
 /*----------------------------------------------------------------------*\
 --------------------------------------------------------------------------
 --------------------------------------------------------------------------
@@ -1131,6 +1260,17 @@ PRUEBA GRATUITA
 
   .detail-title { --t1: 46px; }
 
+  .form-box {
+    height: 540px;
+  }
+  .register-container, .login-container {
+    width: 100%;
+    padding: 0 20px;
+  }
+  .register-container .two-forms {
+    flex-direction: column;
+    gap: 0;
+  }
 }
 
 
@@ -1242,6 +1382,18 @@ PRUEBA GRATUITA
   .detail-subtitle { --t5: 26px; }
 
   .detail-title { --t1: 50px; }
+
+  .form-box {
+    height: 720px;
+  }
+  .register-container, .login-container {
+    width: 100%;
+    padding: 0 20px;
+  }
+  .register-container .two-forms {
+    flex-direction: column;
+    gap: 0;
+  }
 
 }
 
@@ -1357,10 +1509,16 @@ PRUEBA GRATUITA
   .movie-detail-banner,
   .details-actions { margin: 0; }
 
-  .download-btn {
-    position: absolute;
-    left: 15px;
-    bottom: -80px;
+  .form-box {
+    height: 750px;
+  }
+  .register-container, .login-container {
+    width: 100%;
+    padding: 0 20px;
+  }
+  .register-container .two-forms {
+    flex-direction: column;
+    gap: 0;
   }
 
 }
@@ -1417,6 +1575,18 @@ PRUEBA GRATUITA
   .movie-detail-content { max-width: 620px; }
 
   .detail-title { --t1: 60px; }
+
+  .form-box {
+    height: 900px;
+  }
+  .register-container, .login-container {
+    width: 100%;
+    padding: 0 20px;
+  }
+  .register-container .two-forms {
+    flex-direction: column;
+    gap: 0;
+  }
 
 
 
