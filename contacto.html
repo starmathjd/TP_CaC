@@ -39,7 +39,7 @@
 
                     <div class="header-actions">
 
-                        <form action="" class="search-form">
+                        <form action="" class="search">
                             <input type="movie" name="movie" required placeholder="Search Movie" class="seach-field">
                             <button type="submit"><ion-icon name="search-outline"></ion-icon></button>
                           </form>
@@ -62,8 +62,10 @@
         -----------------------------------------------------------------
         ---------------------------------------------------------------------->
 
-                        <button class="btn btn-primary">Sign in</button>
-
+                        
+                        <a href="./login.html">
+                            <button class="btn btn-primary">Login</button>
+                        </a>
                     </div>
 
                     <button class="menu-open-btn" data-menu-open-btn>
@@ -97,8 +99,12 @@
                                 <a href="contacto.html" class="navbar-link">Contacto</a>
                             </li>
                         </ul>
-
                         <ul class="navbar-social-list">
+                            <li>
+                                <a href="./login.html" class="social-link">
+                                  <ion-icon name="log-in-outline"></ion-icon>
+                                </a>
+                              </li>
                             <li>
                               <a href="#" class="social-link">
                                 <ion-icon name="logo-facebook"></ion-icon>
@@ -119,14 +125,12 @@
                                 <ion-icon name="logo-instagram"></ion-icon>
                               </a>
                             </li>
-                          </ul>
+                        </ul>
 
                     </nav>
 
             </div>
         </header>
-      
-        <main>
     <!------------------------------------------------------------
     ----------------------   SERVICIO PAGO  ----------------------
     -------------------------------------------------------------->
@@ -195,7 +199,7 @@
                     </div>
       
                     <form action="" class="cta-form">
-                        <input type="email" name="email" required placeholder="Ingresa tu mail" class="email-field">
+                        <input type="email" name="email" required placeholder="Ingresa tu mail" class="email-field" autocomplete="email">
                         <button type="submit" class="cta-form-btn">¿Qué vamos a mirar hoy?</button>
                     </form>
                 </div>
