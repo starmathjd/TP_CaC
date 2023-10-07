@@ -12,7 +12,7 @@
   --gris: hsl(0, 0%, 20%);
   --gris1: hsl(229, 15%, 21%);
   --gris2: hsl(216, 22%, 18%);
-  --amarillo: hsl(57, 97%, 45%);
+  --amarillo: hsl(43, 98%, 68%);
   --vazul: hsl(253, 21%, 13%);
   --blanco: hsl(0, 100%, 100%);
   --blanco1: hsl(0, 7%, 88%);
@@ -211,9 +211,9 @@ DESCRIPCIÓN DE LA PÁGINA
 }
 
 
-/*-----------------------------------*\
----------- BOTON PARA SUBIR AL INICIO DE LA PÁGINA 
-\*-----------------------------------*/
+/*---------------------------------------------------------*\
+---------- BOTON PARA SUBIR AL INICIO DE LA PÁGINA ----------
+\*---------------------------------------------------------*/
 
 .go-top {
   position: fixed;
@@ -515,7 +515,8 @@ DESCRIPCIÓN DE LA PÁGINA
 
 
 .upcoming {
-  background: url("./img/pic4.jpg") no-repeat;
+  background-image: linear-gradient(to bottom, rgba(20, 20, 20, 0.534) 0%, rgba(10, 10, 10, 0.932) 100%), url("./img/background.jpg");
+  background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -567,7 +568,7 @@ DESCRIPCIÓN DE LA PÁGINA
 
 
 .top-rated {
-  background: var(--negro) no-repeat;
+  background: rgba(8, 8, 8, 0.623) no-repeat;
   background-size: cover;
   background-position: center;
   padding-block: var(--section-padding);
@@ -591,7 +592,7 @@ DESCRIPCIÓN DE LA PÁGINA
 
 
 .tv-series {
-  background: grey no-repeat;
+  background: rgb(24, 24, 24) no-repeat;
   background-size: cover;
   background-position: center;
   padding-block: var(--section-padding);
@@ -694,13 +695,13 @@ DESCRIPCIÓN DE LA PÁGINA
 
 
 
-/*-----------------------------------*\
------- DETALLE DE PELÍCULA 
-\*-----------------------------------*/
+/*-----------------------------*\
+------ DETALLE DE PELÍCULA ------
+\*-----------------------------*/
 
 
 .movie-detail {
-  background: url("./img/pic4.jpg") no-repeat;
+  background-image: linear-gradient(to bottom, rgba(20, 20, 20, 0.534) 0%, rgba(10, 10, 10, 0.932) 100%), url("./img/background.jpg");
   background-size: cover;
   background-position: center;
   padding-top: 160px;
@@ -729,7 +730,7 @@ DESCRIPCIÓN DE LA PÁGINA
   display: grid;
   place-items: center;
   font-size: 120px;
-  color: var(--blanco);
+  color: var(--amarillo);
   transition: var(--trans1);
 }
 
@@ -762,9 +763,9 @@ DESCRIPCIÓN DE LA PÁGINA
   flex-wrap: wrap;
   gap: 20px 40px;
   max-width: 500px;
-  background: var(--gris2);
-  padding: 25px;
-  border: 1px solid var(--gris);
+  background: var(--gris2) -webkit-gradient(linear, left top, right top, from(rgba(19, 19, 19, 0.61)), to(rgba(10, 10, 10, 0.932)));
+  padding: 20px;
+  border: 2px solid var(--gris);
   border-radius: 4px;
   margin-bottom: 30px;
 }
@@ -822,7 +823,7 @@ DESCRIPCIÓN DE LA PÁGINA
 
 
 .service {
-  background: url("./img/pic4.jpg") no-repeat;
+  background-image: linear-gradient(to bottom, rgba(20, 20, 20, 0.534) 0%, rgba(10, 10, 10, 0.932) 100%), url("./img/background.jpg");
   background-size: cover;
   background-position: center;
   padding-block: var(--section-padding);
@@ -1068,12 +1069,12 @@ PRUEBA GRATUITA
 \*----------------------------------------------------------------------*/
 
 .form-wrapper{
+  background-image: linear-gradient(to bottom, rgba(20, 20, 20, 0.534) 0%, rgba(10, 10, 10, 0.932) 100%), url("./img/background.jpg");
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 90vh;
   margin-bottom: 10px;
-  background: url("./img/pic4.jpg") no-repeat;
   background-size: cover;
 }
 
