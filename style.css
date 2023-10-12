@@ -1013,7 +1013,11 @@ PRUEBA GRATUITA
   border-bottom: 1px solid hsla(0, 0%, 100%, 0.1);
 }
 
-.social-list { column-gap: 10px; }
+.social-list { 
+  column-gap: 10px; 
+  padding-right: 50px;
+  padding-bottom: 5px;
+}
 
 .social-link {
   background: var(--negro1);
@@ -1028,7 +1032,12 @@ PRUEBA GRATUITA
   transition: var(--trans1);
 }
 
-.footer-bottom { padding-block: 25px; }
+.footer-bottom { 
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-block: 10px; 
+ }
+
 
 .copyright {
   color: var(--blanco3);
@@ -1179,6 +1188,7 @@ h4{
   font-size: small;
   margin-top: 10px;
   gap: 50px;
+  cursor: pointer;
 }
 .two-col .one{
   display: flex;
@@ -1191,6 +1201,12 @@ h4{
 }
 .two a:hover{
   color: var(--amarillo)
+}
+
+.check{
+  margin-right: 8px;
+  width: 14px;
+  cursor: pointer;
 }
 
 
