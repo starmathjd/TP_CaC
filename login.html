@@ -21,6 +21,8 @@
 
   <link rel="stylesheet" href="./style.css">
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link href='https://unicons.iconscout.com/release/v4.0.0/css/line.css' rel='stylesheet'>
+
 
  <!------------------------------------------------
     ----- FONT DE GOOGLE
@@ -155,36 +157,40 @@
 
     <section class="form-wrapper">
       <div class="form-box">
-                                        <!------------------- login form -------------------------->
+            <!--------------------------------------------------------------------
+                  --------------------------- LOGIN -------------------------
+            ---------------------------------------------------------------------->
         <div class="login-container" id="login">
           <div class="top-form">
             <span>No tienes una cuenta? 
               <a href="#" onclick="register()">Registrate aquí</a>
             </span>
-            <h4>Login</h4>
+            <h4>Ingresar</h4>
           </div>
           <div class="input-box">
             <input id="email" type="text" class="input-field" placeholder="Nombre de Usuario o Email" autocomplete="username">
             <i class="bx bx-user"></i>
           </div>
           <div class="input-box">
-            <input id="password" type="password" class="input-field" placeholder="Contraseña">
-            <i class="bx bx-lock-alt"></i>
+            <input id="password" type="password" class="input-field" placeholder="BLABLA">
+            <i class='bx bx-hide eye-icon'></i>
           </div>
           <div class="input-box">
             <input type="submit" class="submit" value="Ingresar">
           </div>
           <div class="two-col">
             <div class="one">
-              <input type="checkbox" id="login-check">
-              <label for="login-check" style="white-space: nowrap"> Recordarme </label>
+              <input type="checkbox" id="login-check" class="check">
+              <label for="login-check" style="white-space: nowrap" class="check"> Recordarme </label>
             </div>
             <div class="two">
               <a href="#">Olvidaste tu contraseña?</a>
             </div>
           </div>
         </div>
-                                      <!------------------- registration form -------------------------->
+            <!--------------------------------------------------------------------
+                  --------------------------- REGISTER -------------------------
+            ---------------------------------------------------------------------->
         <div class="register-container" id="register">
           <div class="top-form">
             <span>Tienes una cuenta? 
@@ -207,16 +213,20 @@
             <i class="bx bx-envelope"></i>
           </div>
           <div class="input-box">
-            <input id="pass" type="password" class="input-field" placeholder="Contraseña">
-            <i class="bx bx-lock-alt"></i>
+            <input id="RegPassword" type="password" class="input-field" placeholder="Crear Contraseña" required>
+            <i class='bx bx-hide eye-icon'></i>
+          </div>
+          <div class="input-box">
+            <input id="pass" type="password" class="input-field" placeholder="Confirmar Contraseña">
+            <i class='bx bx-hide eye-icon'></i>
           </div>
           <div class="input-box">
             <input id="register" type="submit" class="submit" value="Registrarse">
           </div>
           <div class="two-col">
             <div class="one">
-              <input type="checkbox" id="register-check">
-              <label for="register-check" style="white-space: nowrap"> Recordarme Me</label>
+              <input type="checkbox" id="register-check" class="check">
+              <label for="register-check" style="white-space: nowrap" class="check"> Acepto los Terminos y Condiciones</label>
             </div>
             <div class="two">
               <a href="#">Terminos & condiciones</a>
