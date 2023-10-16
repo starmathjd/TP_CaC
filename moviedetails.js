@@ -6,7 +6,7 @@ let result = document.getElementById("result");
 // Funciones para el fetch de datos de la API (dejo la búsqueda avanzada para roadmap futuro, hay que revisarlo y probarlo, ponemos en backlog para próxima versión)
 let getMovie = () => {
     // let movieName = movieNameRef.value;
-    let url = `http://www.omdbapi.com/?t=the+northman&y=2022&apikey=5650fb51`;
+    let url = `https://www.omdbapi.com/?t=the+northman&y=2022&apikey=5650fb51`;
     // let url = `https://www.omdbapi.com/?t=${movieName}&apikey=${key}`;
     // if si el campo es vacio
     // if (movieName.length <= 0) {
