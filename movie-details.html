@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="/moviedetails.js"></script>
   <title>The Northman</title>
 
   <!-- 
@@ -156,7 +157,8 @@
 
           <figure class="movie-detail-banner">
 
-            <img src="./img/PR_1.png" alt="The Northman movie poster">
+            <div id="poster"></div>
+            <!-- <img src="./img/PR_1.png" alt="The Northman movie poster"> -->
 
             <button class="play-btn">
               <ion-icon name="play-circle-outline"></ion-icon>
@@ -167,50 +169,59 @@
           <div class="movie-detail-content">
 
             <p class="detail-subtitle">Película Recomendada</p>
-
-            <h1 class="h1 detail-title">
+            <div id="title"></div>
+            <!-- <h1 class="h1 detail-title">
               The Northman
-            </h1>
+            </h1> -->
 
             <div class="meta-wrapper">
 
               <div class="badge-wrapper">
                 <div class="badge badge-fill">PG 16</div>
-
                 <div class="badge badge-outline">HD</div>
               </div>
-
-              <div class="ganre-wrapper">
+                            
+              <!-- <div class="ganre-wrapper">
                 <a href="#">Drama,</a>
                 <a href="#">Action,</a>
                 <a href="#">Mystery,</a>
                 <a href="#">Thriller,</a>
                 <a href="#">Comedy,</a>
                 <a href="#">Science Fiction</a>
-              </div>
+              </div> -->
 
               <div class="date-time">
 
                 <div>
                   <ion-icon name="calendar-outline"></ion-icon>
-
-                  <time datetime="2021">2022</time>
+                  <div id="year"></div>
                 </div>
 
                 <div>
                   <ion-icon name="time-outline"></ion-icon>
+                  <div id="runtime"></div>
+                </div>
 
-                  <time datetime="PT115M">136 min</time>
+                <div>
+                  <ion-icon name="star"></ion-icon>
+                  <div id="rating"></div>
+                </div>
+                
+                <div>
+                  <ion-icon name="film"></ion-icon>
+                  <div id="genre"></div>
                 </div>
 
               </div>
 
             </div>
 
-            <p class="storyline">
+            <div id="plot"></div>
+            <!-- <p class="storyline">
               A young Viking prince is on a quest to avenge his father's murder.
-            </p>
-
+            </p> -->
+            
+<!--------------------- inicio caja de reproducción --------------------->
             <div class="details-actions">
               
               <button class="btn btn-primary">
