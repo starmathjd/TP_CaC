@@ -182,7 +182,6 @@ DESCRIPCIÓN DE LA PÁGINA
 
 .search {
   background-color: hsl(0, 0%, 20%);
-  padding: 3px 20px;
   border-radius: 20px;
   height: 40px;
   display: flex;
@@ -207,7 +206,7 @@ DESCRIPCIÓN DE LA PÁGINA
   color: var(--blanco);
   border: none;
   outline: none;
-  cursor: pointer;
+  cursor: pointer;  
 }
 
 
@@ -1147,9 +1146,10 @@ h4{
   width: 100%;
   padding: 0 10px 0 45px;
   border: none;
-  border-radius: 30px;
+  border-radius: 30px;  
   outline: none;
   transition: .2s ease;
+  margin-top: 10px;
 }
 .input-field:is(:hover, :focus){
   background: var(--gris1);
@@ -1176,6 +1176,7 @@ h4{
   background: var(--negro1);
   cursor: pointer;
   transition: .3s ease-in-out;
+  padding-top: 10px;
 }
 .submit:is(:hover, :focus){
   background: var(--amarillo);
@@ -1208,6 +1209,38 @@ h4{
   width: 14px;
   cursor: pointer;
 }
+
+label,
+.error-message {
+  display: block;
+  font-size: 1em;
+}
+label {
+  margin-bottom: 0.5em;
+  font-weight: 500;
+}
+.error-message {
+  margin-top: 0.2em;
+}
+
+input {
+  padding: 1em 0.5em;
+  border: 1.5px solid #d0d0d0;
+}
+
+.required-color {
+  color: #ff4747;
+}
+.error {
+  border-color: #ff4747;
+}
+.valid {
+  border-color: #37a137;
+}
+.hide {
+  display: none;
+}
+
 
 
 
@@ -1279,15 +1312,41 @@ h4{
 
   .form-box {
     height: 540px;
+    margin-top: 60px;
   }
   .register-container, .login-container {
     width: 100%;
     padding: 0 20px;
+    margin-top: 10px;
   }
   .register-container .two-forms {
     flex-direction: column;
     gap: 0;
   }
+
+  .two-col .one{
+    display: flex;
+    gap: 5px;
+    max-width: 20px;;
+  }
+  .two a{
+    text-decoration: none;
+    color: var(--blanco);
+    margin-bottom: 18px;
+    margin-top: 10px;
+  }
+  .two a:hover{
+    color: var(--amarillo)
+  }
+
+  .check{
+    margin-right: 10px;
+    margin-bottom: 18px;
+    margin-top: 10px;
+    width: 14px;
+    cursor: pointer;
+  }
+
 }
 
 
@@ -1374,10 +1433,7 @@ h4{
   .cta .email-field { margin-bottom: 0; }
 
   .cta-form-btn {
-    position: absolute;
-    top: 2px;
-    right: 2px;
-    bottom: 2px;
+    position: relative;
   }
 
   .footer-brand-wrapper .logo { margin: 4; }
@@ -1604,7 +1660,4 @@ h4{
     flex-direction: column;
     gap: 0;
   }
-
-
-
 }
