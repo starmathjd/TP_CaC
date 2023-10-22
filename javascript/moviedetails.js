@@ -42,3 +42,56 @@ let getMovie = () => {
 //};
 
 window.addEventListener("load", getMovie);
+
+
+
+/******************************************************************************/
+/****************** *******************/
+/******************************************************************************/
+
+
+
+document.getElementById("openPopup").addEventListener("click", function () {
+    var videoPopup = document.getElementById("videoPopup");
+    var videoIframe = videoPopup.querySelector("iframe");
+
+    // Establece la URL del video de YouTube en el iframe
+    videoIframe.src = "https://www.youtube.com/embed/nQb1bqjj52k";
+
+    // Muestra el video emergente
+    videoPopup.style.display = "block";
+});
+
+document.getElementById("closePopup").addEventListener("click", function () {
+    var videoPopup = document.getElementById("videoPopup");
+    var videoIframe = videoPopup.querySelector("iframe");
+
+    // Detén la reproducción del video
+    videoIframe.src = "";
+
+    // Oculta el video emergente
+    videoPopup.style.display = "none";
+});
+
+
+document.getElementById("openPopup2").addEventListener("click", function () {
+    var videoPopup = document.getElementById("videoPopup2");
+    var videoIframe = videoPopup.querySelector("iframe");
+
+    // Establece la URL del video de YouTube en el iframe
+    videoIframe.src = "https://www.youtube.com/embed/sUKy8Q6mGk0";
+
+    // Muestra el video emergente
+    videoPopup.style.display = "block";
+});
+
+document.getElementById("closePopup2").addEventListener("click", function () {
+    var videoPopup = document.getElementById("videoPopup2");
+    var videoIframe = videoPopup.querySelector("iframe");
+
+    // Detén la reproducción del video
+    videoIframe.src = "";
+
+    // Oculta el video emergente
+    videoPopup.style.display = "none";
+});

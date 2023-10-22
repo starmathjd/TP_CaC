@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="/moviedetails.js"></script>
+  
   <title>The Northman</title>
 
   <!-- 
@@ -16,7 +16,7 @@
   <!-- 
     - custom css link
   -->
-  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./syle/style.css">
 
   <!-- 
     - google font link
@@ -97,12 +97,11 @@
             <a href="./index.html" class="navbar-link">Home</a>
           </li>
           <li>
-            <a href="#" class="navbar-link">Películas</a>
+            <a href="./index.html#pelis" class="navbar-link">Películas</a>
           </li>
           <li>
-            <a href="#" class="navbar-link">Series</a>
+            <a href="./index.html#series" class="navbar-link">Series</a>
           </li>
-
           <li>
             <a href="contacto.html" class="navbar-link">Premium</a>
           </li>
@@ -115,27 +114,32 @@
             </a>
           </li>
           <li>
-            <a href="#" class="social-link">
+            <a href="https://www.facebook.com/" class="social-link" target="_blank">
               <ion-icon name="logo-facebook"></ion-icon>
             </a>
           </li>
           <li>
-            <a href="#" class="social-link">
+            <a href="https://twitter.com/" class="social-link" target="_blank">
               <ion-icon name="logo-twitter"></ion-icon>
             </a>
           </li>
           <li>
-            <a href="#" class="social-link">
+            <a href="https://ar.pinterest.com/" class="social-link" target="_blank">
               <ion-icon name="logo-pinterest"></ion-icon>
             </a>
           </li>
           <li>
-            <a href="#" class="social-link">
+            <a href="https://www.instagram.com/" class="social-link" target="_blank">
               <ion-icon name="logo-instagram"></ion-icon>
             </a>
           </li>
         </ul>
-
+        <ul class="navbar-social-list">
+          <form action="" class="search">
+            <input type="movie" name="movie" required placeholder="Búsqueda rápida" class="seach-field">
+            <button type="submit"><ion-icon name="search-outline"></ion-icon></button>
+          </form>
+        </ul>
       </nav>
 
     </div>
@@ -224,15 +228,34 @@
 <!--------------------- inicio caja de reproducción --------------------->
             <div class="details-actions">
               
-              <button class="btn btn-primary">
+              <button class="btn btn-primary" id="openPopup">
                 <ion-icon name="play"></ion-icon>
                 <span>Avance</span>
               </button>
-              
-              <button class="btn btn-primary">
+              <div id="videoPopup" class="popup">
+                <span class="close" id="closePopup">&times;</span>
+                <iframe width="510" 
+                height="315" 
+                src=""
+                frameborder="0" 
+                allowfullscreen>
+                </iframe>
+              </div>
+              <button class="btn btn-primary" id="openPopup2">
                 <ion-icon name="book"></ion-icon>
                 <span>Reseña</span>
               </button>
+              <div id="videoPopup2" class="popup">
+                <span class="close" id="closePopup2">&times;</span>
+                <iframe
+                    id="videoPlayer2"
+                    width="510"
+                    height="315"
+                    src=""
+                    frameborder="0"
+                    allowfullscreen>
+                </iframe>
+              </div>
               
               <button class="btn btn-primary">
                 <ion-icon name="tv"></ion-icon>
@@ -269,26 +292,26 @@
                             <img src="./img/logo_8_b.png" height="30" alt="CineMania">
                         </a> 
                         <ul class="social-list">
-                            <li>
-                                <a href="#" class="social-link">
-                                    <ion-icon name="logo-facebook"></ion-icon>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" class="social-link">
-                                    <ion-icon name="logo-twitter"></ion-icon>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" class="social-link">
-                                    <ion-icon name="logo-pinterest"></ion-icon>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" class="social-link">
-                                    <ion-icon name="logo-instagram"></ion-icon>
-                                  </a>
-                            </li>
+                          <li>
+                            <a href="https://www.facebook.com/" class="social-link" target="_blank">
+                              <ion-icon name="logo-facebook"></ion-icon>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="https://twitter.com/" class="social-link" target="_blank">
+                              <ion-icon name="logo-twitter"></ion-icon>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="https://ar.pinterest.com/" class="social-link" target="_blank">
+                              <ion-icon name="logo-pinterest"></ion-icon>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="https://www.instagram.com/" class="social-link" target="_blank">
+                              <ion-icon name="logo-instagram"></ion-icon>
+                            </a>
+                          </li>
                         </ul>
                     </div>
                 </div>
@@ -314,8 +337,10 @@
         <ion-icon name="chevron-up"></ion-icon>
     </a>
   
-
-    <script src="./script.js"></script>      
+    
+    <script src="./javascript/script.js"></script>
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <script src="./javascript/moviedetails.js"></script>  
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
   

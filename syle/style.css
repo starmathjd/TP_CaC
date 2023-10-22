@@ -198,7 +198,7 @@ DESCRIPCIÓN DE LA PÁGINA
 }
 
 .search input::placeholder{
-  color: var(--blanco2);
+    color: var(--blanco2);
 }
 
 .search button{
@@ -209,6 +209,26 @@ DESCRIPCIÓN DE LA PÁGINA
   cursor: pointer;  
 }
 
+.popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  padding: 20px;
+  text-align: center;
+}
+
+.close {
+  position: absolute;
+  color: var(--amarillo);
+  top: 0;
+  right: 0;
+  padding: 0px;
+  cursor: pointer;
+  font-size: 30px; /* Ajusta el tamaño de la cruz a tu preferencia */
+}
 
 /*---------------------------------------------------------*\
 ---------- BOTON PARA SUBIR AL INICIO DE LA PÁGINA ----------
@@ -353,10 +373,10 @@ DESCRIPCIÓN DE LA PÁGINA
   gap: 30px;
   overflow-x: auto;
   scroll-snap-type: inline mandatory;
-  padding-bottom: 25px;
+  padding-bottom: 40px;
 }
 
-.has-scrollbar::-webkit-scrollbar { height: 8px; }
+.has-scrollbar::-webkit-scrollbar { height: 12px;}
 
 .has-scrollbar::-webkit-scrollbar-track {
   background: transparent;
@@ -473,6 +493,7 @@ DESCRIPCIÓN DE LA PÁGINA
   justify-content: center;
   align-items: center;
   gap: 20px;
+  margin-bottom: 10%;
 }
 
 .navbar-social-link {
@@ -514,7 +535,7 @@ DESCRIPCIÓN DE LA PÁGINA
 
 
 .upcoming {
-  background-image: linear-gradient(to bottom, rgba(20, 20, 20, 0.534) 0%, rgba(10, 10, 10, 0.932) 100%), url("./img/background.jpg");
+  background-image: linear-gradient(to bottom, rgba(20, 20, 20, 0.534) 0%, rgba(10, 10, 10, 0.932) 100%), url("../img/background.jpg");
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
@@ -700,7 +721,7 @@ DESCRIPCIÓN DE LA PÁGINA
 
 
 .movie-detail {
-  background-image: linear-gradient(to bottom, rgba(20, 20, 20, 0.534) 0%, rgba(10, 10, 10, 0.932) 100%), url("./img/background.jpg");
+  background-image: linear-gradient(to bottom, rgba(20, 20, 20, 0.534) 0%, rgba(10, 10, 10, 0.932) 100%), url("../img/background.jpg");
   background-size: cover;
   background-position: center;
   padding-top: 160px;
@@ -822,7 +843,7 @@ DESCRIPCIÓN DE LA PÁGINA
 
 
 .service {
-  background-image: linear-gradient(to bottom, rgba(20, 20, 20, 0.534) 0%, rgba(10, 10, 10, 0.932) 100%), url("./img/background.jpg");
+  background-image: linear-gradient(to bottom, rgba(20, 20, 20, 0.534) 0%, rgba(10, 10, 10, 0.932) 100%), url("../img/background.jpg");
   background-size: cover;
   background-position: center;
   padding-block: var(--section-padding);
@@ -1077,7 +1098,7 @@ PRUEBA GRATUITA
 \*----------------------------------------------------------------------*/
 
 .form-wrapper{
-  background-image: linear-gradient(to bottom, rgba(20, 20, 20, 0.534) 0%, rgba(10, 10, 10, 0.932) 100%), url("./img/background.jpg");
+  background-image: linear-gradient(to bottom, rgba(20, 20, 20, 0.534) 0%, rgba(10, 10, 10, 0.932) 100%), url("../img/background.jpg");
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1096,6 +1117,7 @@ PRUEBA GRATUITA
   overflow: hidden;
   z-index: 2;
 }
+
 .login-container{
   position: relative;
   left: 4px;
@@ -1194,7 +1216,7 @@ h4{
 .two-col .one{
   display: flex;
   gap: 5px;
-  max-width: 20px;;
+  max-width: 20px;
 }
 .two a{
   text-decoration: none;
@@ -1319,6 +1341,7 @@ input {
     padding: 0 20px;
     margin-top: 10px;
   }
+
   .register-container .two-forms {
     flex-direction: column;
     gap: 0;
@@ -1327,7 +1350,7 @@ input {
   .two-col .one{
     display: flex;
     gap: 5px;
-    max-width: 20px;;
+    max-width: 20px;
   }
   .two a{
     text-decoration: none;
@@ -1346,7 +1369,6 @@ input {
     width: 14px;
     cursor: pointer;
   }
-
 }
 
 
@@ -1385,23 +1407,6 @@ input {
   }
 
   .header-actions .btn-primary { display: none; }
-
-  .search-btn {
-    position: relative;
-    color: var(--blanco);
-  }
-
-  .search-btn ion-icon { --ionicon-stroke-width: 80px; }
-
-  .search-btn::after {
-    content: "";
-    position: absolute;
-    top: 1px;
-    right: -20px;
-    background: hsla(0, 0%, 100%, 0.1);
-    width: 2px;
-    height: 14px;
-  }
 
   .lang-wrapper {
     display: flex;
@@ -1456,18 +1461,72 @@ input {
 
   .detail-title { --t1: 50px; }
 
+  .two-col{
+    display: flex;
+    justify-content: space-between;
+    color: var(--blanco);
+    font-size: small;
+    margin-top: 10px;
+    gap: 50px;
+    cursor: pointer;
+  }
+  .two-col .one{
+    display: flex;
+    gap: 5px;
+    max-width: 20px;;
+  }
+  .two a{
+    text-decoration: none;
+    color: var(--blanco);
+  }
+  .two a:hover{
+    color: var(--amarillo)
+  }
+
   .form-box {
-    height: 720px;
-  }
-  .register-container, .login-container {
     width: 100%;
-    padding: 0 20px;
+    margin-top: 10%;
+    margin-left: 20%;
+    margin-right: 30%;
   }
+ 
+  .login-container{
+    width: 95%;
+    margin: auto;
+  }
+
+  .register-container{
+    width: 95%;
+    margin: auto;
+  }
+  
   .register-container .two-forms {
     flex-direction: column;
     gap: 0;
   }
 
+  .top-form span{
+    color: var(--blanco);
+    font-size: small;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+  }
+  .top-form span a{
+    font-weight: var(--fw-500);
+    color: var(--blanco);
+    margin-left: 5px;
+  }
+  
+  .top-form span a:hover{
+    color: var(--amarillo)
+  }
+  h4{
+    color: var(--blanco);
+    font-size: 30px;
+    text-align: center;
+    padding: 10px 0 30px 0;
+  }
 }
 
 
@@ -1551,6 +1610,14 @@ input {
 
   .service-banner { margin-bottom: 0; }
 
+ 
+  .header-actions .btn-primary {
+    display: block;
+    --t11: 10px;
+    padding: 10px 35px;
+    letter-spacing: 1px;
+  }
+
   .cta { text-align: left; }
 
   .cta .container {
@@ -1593,7 +1660,6 @@ input {
     flex-direction: column;
     gap: 0;
   }
-
 }
 
 

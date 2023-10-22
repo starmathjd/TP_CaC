@@ -19,7 +19,7 @@
     ----- ENLACE A LOS ESTILOS
 -------------------------------------------------->
 
-  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./syle/style.css">
 
  <!------------------------------------------------
     ----- FONT DE GOOGLE
@@ -102,10 +102,10 @@
               <a href="./index.html" class="navbar-link">Home</a>
             </li>
             <li>
-              <a href="#" class="navbar-link">Películas</a>
+              <a href="#pelis" class="navbar-link">Películas</a>
             </li>
             <li>
-              <a href="#" class="navbar-link">Series</a>
+              <a href="#series" class="navbar-link">Series</a>
             </li>
             <li>
               <a href="contacto.html" class="navbar-link">Premium</a>
@@ -120,25 +120,31 @@
               </a>
             </li>
             <li>
-              <a href="#" class="social-link">
+              <a href="https://www.facebook.com/" class="social-link" target="_blank">
                 <ion-icon name="logo-facebook"></ion-icon>
               </a>
             </li>
             <li>
-              <a href="#" class="social-link">
+              <a href="https://twitter.com/" class="social-link" target="_blank">
                 <ion-icon name="logo-twitter"></ion-icon>
               </a>
             </li>
             <li>
-              <a href="#" class="social-link">
+              <a href="https://ar.pinterest.com/" class="social-link" target="_blank">
                 <ion-icon name="logo-pinterest"></ion-icon>
               </a>
             </li>
             <li>
-              <a href="#" class="social-link">
+              <a href="https://www.instagram.com/" class="social-link" target="_blank">
                 <ion-icon name="logo-instagram"></ion-icon>
               </a>
             </li>
+          </ul>
+          <ul class="navbar-social-list">
+            <form action="" class="search">
+              <input type="movie" name="movie" required placeholder="Búsqueda rápida" class="seach-field">
+              <button type="submit"><ion-icon name="search-outline"></ion-icon></button>
+            </form>
           </ul>
         </nav>
       </div>
@@ -373,7 +379,7 @@
       <!---------------------------------------------------------------------
       ----------------------------- RECOMENDADAS ----------------------------
        ---------------------------------------------------------------------->
-
+          <h5 id="pelis"></h5>
       <section class="top-rated">
         <div class="container">
 
@@ -381,35 +387,6 @@
           <h2 class="h2 section-title">Películas Recomendadas</h2>
 
           <ul class="movies-list">
-            <li>
-              <div class="movie-card">
-                <a href="./movie-details.html">
-                  <figure class="card-banner">
-                    <img src="./img/R1.JPG" alt="RRR (Rise Roar Revolt) movie poster">
-                  </figure>
-                </a>
-                <div class="title-wrapper">
-                  <a href="./movie-details.html">
-                    <h3 class="card-title">RRR (Rise Roar Revolt)</h3>
-                  </a>
-                  <time datetime="2022">2022</time>
-                </div>
-                <div class="card-meta">
-                  <div class="badge badge-outline">HD</div>
-                  <div class="badge badge-outline">4k</div>
-                  <div class="duration">
-                    <ion-icon name="time-outline"></ion-icon>
-                    <time datetime="PT137M">187 min</time>
-                  </div>
-                  <div class="rating">
-                    <ion-icon name="star"></ion-icon>
-                    <data>7.8</data>
-                  </div>
-                </div>
-              </div>
-            </li>
-            <!------------------------------------------------------------------------>
-            <!------------------------------------------------------------------------>
             <li>
               <div class="movie-card">
                 <a href="./movie-details.html">
@@ -433,6 +410,35 @@
                   <div class="rating">
                     <ion-icon name="star"></ion-icon>
                     <data>7</data>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <!------------------------------------------------------------------------>
+            <!------------------------------------------------------------------------>
+            <li>
+              <div class="movie-card">
+                <a href="./movie-details.html">
+                  <figure class="card-banner">
+                    <img src="./img/R1.JPG" alt="RRR (Rise Roar Revolt) movie poster">
+                  </figure>
+                </a>
+                <div class="title-wrapper">
+                  <a href="./movie-details.html">
+                    <h3 class="card-title">RRR (Rise Roar Revolt)</h3>
+                  </a>
+                  <time datetime="2022">2022</time>
+                </div>
+                <div class="card-meta">
+                  <div class="badge badge-outline">HD</div>
+                  <div class="badge badge-outline">4k</div>
+                  <div class="duration">
+                    <ion-icon name="time-outline"></ion-icon>
+                    <time datetime="PT137M">187 min</time>
+                  </div>
+                  <div class="rating">
+                    <ion-icon name="star"></ion-icon>
+                    <data>7.8</data>
                   </div>
                 </div>
               </div>
@@ -562,7 +568,7 @@
       <!---------------------------------------------------------------------
       -------------------------------- SERIES -------------------------------
        ---------------------------------------------------------------------->
-
+       <h5 id="series"></h5>
       <section class="tv-series">
         <div class="container">
 
@@ -572,13 +578,13 @@
           <ul class="movies-list">
             <li>
               <div class="movie-card">
-                <a href="./serie-details.html">
+                <a href="#">
                   <figure class="card-banner">
                     <img src="./img/S1.jpg" alt="The Bear serie poster">
                   </figure>
                 </a>
                 <div class="title-wrapper">
-                  <a href="./serie-details.html">
+                  <a href="#">
                     <h3 class="card-title">The Bear</h3>
                   </a>
                   <time datetime="2022">2022-</time>
@@ -603,13 +609,13 @@
             <!------------------------------------------------------------------------>
             <li>
               <div class="movie-card">
-                <a href="./serie-details.html">
+                <a href="#">
                   <figure class="card-banner">
                     <img src="./img/S2.jpg" alt="From serie poster">
                   </figure>
                 </a>
                 <div class="title-wrapper">
-                  <a href="./serie-details.html">
+                  <a href="#">
                     <h3 class="card-title">From</h3>
                   </a>
                   <time datetime="2022">2022-</time>
@@ -633,13 +639,13 @@
             <!------------------------------------------------------------------------>
             <li>
               <div class="movie-card">
-                <a href="./serie-details.html">
+                <a href="#">
                   <figure class="card-banner">
                     <img src="./img/S3.jpg" alt="House of the Dragon serie poster">
                   </figure>
                 </a>
                 <div class="title-wrapper">
-                  <a href="./serie-details.html">
+                  <a href="#">
                     <h3 class="card-title">House of the Dragon</h3>
                   </a>
                   <time datetime="2022">2022-</time>
@@ -663,13 +669,13 @@
             <!------------------------------------------------------------------------>
             <li>
               <div class="movie-card">
-                <a href="./serie-details.html">
+                <a href="#">
                   <figure class="card-banner">
                     <img src="./img/S4.jpg" alt="1923 serie poster">
                   </figure>
                 </a>
                 <div class="title-wrapper">
-                  <a href="./serie-details.html">
+                  <a href="#">
                     <h3 class="card-title">1923</h3>
                   </a>
                   <time datetime="2022">2022-</time>
@@ -693,13 +699,13 @@
             <!------------------------------------------------------------------------>
             <li>
               <div class="movie-card">
-                <a href="./serie-details.html">
+                <a href="#">
                   <figure class="card-banner">
                     <img src="./img/S5.jpg" alt="Slow Horses serie poster">
                   </figure>
                 </a>
                 <div class="title-wrapper">
-                  <a href="./serie-details.html">
+                  <a href="#">
                     <h3 class="card-title">Slow Horses</h3>
                   </a>
                   <time datetime="2022">2022-</time>
@@ -723,13 +729,13 @@
             <!------------------------------------------------------------------------>
             <li>
               <div class="movie-card">
-                <a href="./serie-details.html">
+                <a href="#">
                   <figure class="card-banner">
                     <img src="./img/S6.jpg" alt="Foundation serie poster">
                   </figure>
                 </a>
                 <div class="title-wrapper">
-                  <a href="./serie-details.html">
+                  <a href="#">
                     <h3 class="card-title">Foundation</h3>
                   </a>
                   <time datetime="2022">2021-</time>
@@ -770,22 +776,22 @@
             </a>
           <ul class="social-list">
             <li>
-              <a href="#" class="social-link">
+              <a href="https://www.facebook.com/" class="social-link" target="_blank">
                 <ion-icon name="logo-facebook"></ion-icon>
               </a>
             </li>
             <li>
-              <a href="#" class="social-link">
+              <a href="https://twitter.com/" class="social-link" target="_blank">
                 <ion-icon name="logo-twitter"></ion-icon>
               </a>
             </li>
             <li>
-              <a href="#" class="social-link">
+              <a href="https://ar.pinterest.com/" class="social-link" target="_blank">
                 <ion-icon name="logo-pinterest"></ion-icon>
               </a>
             </li>
             <li>
-              <a href="#" class="social-link">
+              <a href="https://www.instagram.com/" class="social-link" target="_blank">
                 <ion-icon name="logo-instagram"></ion-icon>
               </a>
             </li>
@@ -818,7 +824,7 @@
  <!--------------------------------------------------------------------
    ---------------------------------------------------------------------->
 
-  <script src="./script.js"></script>
+  <script src="./javascript/script.js"></script>
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 

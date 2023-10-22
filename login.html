@@ -19,7 +19,7 @@
     ----- ENLACE A LOS ESTILOS
 -------------------------------------------------->
 
-  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./syle/style.css">
   <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
   <link href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -108,11 +108,11 @@
                 <a href="./index.html" class="navbar-link">Home</a>
               </li>
               <li>
-                <a href="#" class="navbar-link">Películas</a>
-              </li>
-              <li>
-                <a href="#" class="navbar-link">Series</a>
-              </li>
+                <a href="./index.html#pelis" class="navbar-link">Películas</a>
+            </li>
+            <li>
+                <a href="./index.html#series" class="navbar-link">Series</a>
+            </li>
               <li>
                 <a href="contacto.html" class="navbar-link">Premium</a>
               </li>
@@ -124,25 +124,31 @@
                 </a>
               </li>
               <li>
-                <a href="#" class="social-link">
+                <a href="https://www.facebook.com/" class="social-link" target="_blank">
                   <ion-icon name="logo-facebook"></ion-icon>
                 </a>
               </li>
               <li>
-                <a href="#" class="social-link">
+                <a href="https://twitter.com/" class="social-link" target="_blank">
                   <ion-icon name="logo-twitter"></ion-icon>
                 </a>
               </li>
               <li>
-                <a href="#" class="social-link">
+                <a href="https://ar.pinterest.com/" class="social-link" target="_blank">
                   <ion-icon name="logo-pinterest"></ion-icon>
                 </a>
               </li>
               <li>
-                <a href="#" class="social-link">
+                <a href="https://www.instagram.com/" class="social-link" target="_blank">
                   <ion-icon name="logo-instagram"></ion-icon>
                 </a>
               </li>
+            </ul>
+            <ul class="navbar-social-list">
+              <form action="" class="search">
+                <input type="movie" name="movie" required placeholder="Búsqueda rápida" class="seach-field">
+                <button type="submit"><ion-icon name="search-outline"></ion-icon></button>
+              </form>
             </ul>
           </nav>
         </div>
@@ -163,11 +169,19 @@
             <h4>Ingresar</h4>
           </div>
           <div class="input-box">
-            <input id="login-email" type="text" class="input-field" placeholder="Nombre de Usuario o Email" autocomplete="username">
+            <input id="login-email" 
+            type="text" 
+            class="input-field" 
+            placeholder="Nombre de Usuario o Email" 
+            autocomplete="username">
             <i class="bx bx-user"></i>
           </div>
           <div class="input-box">
-            <input type="password" name="login-password" id="login-password" class="input-field" placeholder="Contraseña">
+            <input type="password" 
+            name="login-password" 
+            id="login-password" 
+            class="input-field" 
+            placeholder="Contraseña">
             <i class="bx bx-lock-alt"></i>
           </div>
           <div class="input-box">
@@ -203,8 +217,12 @@
             id="username-input"
             required>
             <i class="fa fa-user-o" aria-hidden="true"></i>
-          <span id="username-error" class="hide required-color error-message">Nombre de usuario inválido</span>
-          <span id="empty-username" class="hide required-color error-message">El nombre de usuario no puede quedar vacío</span>
+          <span id="username-error" 
+          class="hide required-color error-message">
+          Nombre de usuario inválido</span>
+          <span id="empty-username" 
+          class="hide required-color error-message">
+          El nombre de usuario no puede quedar vacío</span>
             </div>
             <div class="input-box">
               <input
@@ -215,8 +233,10 @@
               id="name-input"
               required>
               <i class="fa fa-user" aria-hidden="true"></i>
-            <span id="name-error" class="hide required-color error-message">Nombre de usuario inválido</span>
-            <span id="empty-name" class="hide required-color error-message">El nombre de usuario no puede quedar vacío</span>
+              <span id="name-error" 
+              class="hide required-color error-message">Nombre de usuario inválido</span>
+              <span id="empty-name" 
+              class="hide required-color error-message">El nombre de usuario no puede quedar vacío</span>
             </div>
           </div>
           <div class="input-box">
@@ -228,8 +248,12 @@
             id="email" 
             required >
             <i class="fa fa-envelope" aria-hidden="true"></i>
-          <span id="email-error" class="hide required-color error-message">Ingrese un email válido</span>
-          <span id="empty-email" class="hide required-color error-message">El email no puede quedar vacío</span>
+          <span id="email-error" 
+          class="hide required-color error-message">
+          Ingrese un email válido</span>
+          <span id="empty-email" 
+          class="hide required-color error-message">
+          El email no puede quedar vacío</span>
           </div>
           <div class="input-box">
             <input
@@ -240,8 +264,10 @@
             id="password"
             required>
             <i class="fa fa-lock" aria-hidden="true"></i>
-          <span id="password-error" class="hide required-color error-message">
-            La contraseña debe incluir al menos 8 caracteres alfanuméricos, así como también al menos un caracter especial
+          <span id="password-error" 
+          class="hide required-color error-message">
+            La contraseña debe incluir al menos 8 caracteres alfanuméricos, 
+            así como también al menos un caracter especial
           </span>
           <span id="empty-password" class="hide required-color error-message">
             La contraseña no puede quedar vacía
@@ -256,9 +282,11 @@
             placeholder="Confirma tu Password"
             required>
             <i class="fa fa-lock" aria-hidden="true"></i>
-          <span id="verify-password-error" class="hide required-color error-message">
+          <span id="verify-password-error" 
+          class="hide required-color error-message">
             La confirmación de contraseña debe ser igual a la contraseña ingresada previamente</span>
-          <span id="empty-verify-password" class="hide required-color error-message"> 
+          <span id="empty-verify-password" 
+          class="hide required-color error-message"> 
             La confirmación de contraseña no puede quedar vacía</span>
           </div>
           <div class="two-col">
@@ -268,7 +296,9 @@
               id="register-check" 
               class="check"
               name="register-check">
-              <label for="register-check" style="white-space: nowrap" class="check"> Acepto los Terminos y Condiciones</label>
+              <label for="register-check" 
+              style="white-space: nowrap" 
+              class="check"> Acepto los Terminos y Condiciones</label>
             </div>
             <div class="two">
               <a href="#">Terminos & condiciones</a>
@@ -278,9 +308,9 @@
             <input id="register-button" type="submit" class="submit" value="Registrarse">
           </div>
         </div>
-      </form>
       </div>
       </section>
+    </form>
 
 
 <!------------------------------------------------------------
@@ -316,26 +346,26 @@
                         <img src="./img/logo_8_b.png" height="30" alt="CineMania">
                     </a>     
                     <ul class="social-list">
-                        <li>
-                            <a href="#" class="social-link">
-                                <ion-icon name="logo-facebook"></ion-icon>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="social-link">
-                                <ion-icon name="logo-twitter"></ion-icon>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="social-link">
-                                <ion-icon name="logo-pinterest"></ion-icon>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="social-link">
-                                <ion-icon name="logo-instagram"></ion-icon>
-                              </a>
-                        </li>
+                      <li>
+                        <a href="https://www.facebook.com/" class="social-link" target="_blank">
+                          <ion-icon name="logo-facebook"></ion-icon>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://twitter.com/" class="social-link" target="_blank">
+                          <ion-icon name="logo-twitter"></ion-icon>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://ar.pinterest.com/" class="social-link" target="_blank">
+                          <ion-icon name="logo-pinterest"></ion-icon>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://www.instagram.com/" class="social-link" target="_blank">
+                          <ion-icon name="logo-instagram"></ion-icon>
+                        </a>
+                      </li>
                     </ul>
                 </div>
             </div>
@@ -361,7 +391,8 @@
 </a>
 
 
-<script src="./script.js"></script>      
+<script src="./javascript/script.js"></script>
+<script src="./javascript/form.js"></script> 
 <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
