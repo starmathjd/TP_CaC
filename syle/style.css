@@ -179,7 +179,6 @@ DESCRIPCIÓN DE LA PÁGINA
   color: var(--vazul);
 }
 
-
 .search {
   background-color: hsl(0, 0%, 20%);
   border-radius: 20px;
@@ -195,6 +194,9 @@ DESCRIPCIÓN DE LA PÁGINA
   border: none;
   outline: none;
   color: var(--blanco);
+  padding: 5px; 
+  width: 200px; 
+  border-radius: 20px;
 }
 
 .search input::placeholder{
@@ -227,8 +229,9 @@ DESCRIPCIÓN DE LA PÁGINA
   right: 0;
   padding: 0px;
   cursor: pointer;
-  font-size: 30px; /* Ajusta el tamaño de la cruz a tu preferencia */
+  font-size: 30px; 
 }
+
 
 /*---------------------------------------------------------*\
 ---------- BOTON PARA SUBIR AL INICIO DE LA PÁGINA ----------
@@ -790,20 +793,6 @@ DESCRIPCIÓN DE LA PÁGINA
   margin-bottom: 30px;
 }
 
-.details-actions .share ion-icon {
-  font-size: 25px;
-  color: var(--blanco);
-  margin-inline: auto;
-}
-
-.details-actions .share span {
-  color: var(--blanco1);
-  font-size: var(--t11);
-  transition: var(--trans1);
-}
-
-.details-actions .share:is(:hover, :focus) span { color: var(--amarillo); }
-
 .details-actions .title {
   color: var(--blanco);
   font-weight: var(--fw-700);
@@ -974,6 +963,13 @@ PRUEBA GRATUITA
 }
 
 
+.cta-form input::placeholder{
+  color: rgb(114, 110, 110);
+  font-size: 15px;
+  /*text-align: center;*/
+}
+
+
 
 /*----------------------------------------------------------------------*\
 --------------------------------------------------------------------------
@@ -1063,7 +1059,7 @@ PRUEBA GRATUITA
   color: var(--blanco3);
   font-size: var(--t10);
   font-weight: var(--fw-500);
-  line-height: 1.7;
+  line-height: 1;
   text-align: center;
   margin-bottom: 15px;
 }
@@ -1072,13 +1068,6 @@ PRUEBA GRATUITA
   display: inline-block;
   color: var(--amarillo);
 }
-
-.footer-bottom-img {
-  max-width: max-content;
-  width: 100%;
-  margin-inline: auto;
-}
-
 
 
 
@@ -1103,7 +1092,6 @@ PRUEBA GRATUITA
   justify-content: center;
   align-items: center;
   min-height: 90vh;
-  margin-bottom: 10px;
   background-size: cover;
 }
 
@@ -1111,9 +1099,11 @@ PRUEBA GRATUITA
   position: relative;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+  /*max-width: 100%;*/
   width: 512px;
   height: 420px;
+  /*height: auto;*/
   overflow: hidden;
   z-index: 2;
 }
@@ -1125,6 +1115,7 @@ PRUEBA GRATUITA
   display: flex;
   flex-direction: column;
   transition: .5s ease-in-out;
+  margin-right: 2%;
 }
 .register-container{
   position: absolute;
@@ -1133,6 +1124,7 @@ PRUEBA GRATUITA
   display: flex;
   flex-direction: column;
   transition: .5s ease-in-out;
+  margin-right: auto;
 }
 .top-form span{
   color: var(--blanco);
@@ -1147,19 +1139,20 @@ PRUEBA GRATUITA
   margin-left: 5px;
 }
 
-.top-form span a:hover{
-  color: var(--amarillo)
+.top-form span a:hover {
+  color: var(--amarillo);
 }
-h4{
+h4 {
   color: var(--blanco);
   font-size: 30px;
   text-align: center;
   padding: 10px 0 30px 0;
 }
-.two-forms{
+.two-forms {
   display: flex;
   gap: 10px;
 }
+
 .input-field{
   font-size: 15px;
   background: var(--gris);
@@ -1221,6 +1214,7 @@ h4{
 .two a{
   text-decoration: none;
   color: var(--blanco);
+  margin-bottom: 10%;
 }
 .two a:hover{
   color: var(--amarillo)
@@ -1332,37 +1326,31 @@ input {
 
   .detail-title { --t1: 46px; }
 
+  .footer-brand-wrapper,
+  .quicklink-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .footer-bottom { 
+    padding-block: 10px; 
+   }
+
+
   .form-box {
-    height: 540px;
-    margin-top: 60px;
+    height: 1100px;
   }
   .register-container, .login-container {
     width: 100%;
     padding: 0 20px;
-    margin-top: 10px;
   }
-
   .register-container .two-forms {
     flex-direction: column;
     gap: 0;
   }
 
-  .two-col .one{
-    display: flex;
-    gap: 5px;
-    max-width: 20px;
-  }
-  .two a{
-    text-decoration: none;
-    color: var(--blanco);
-    margin-bottom: 18px;
-    margin-top: 10px;
-  }
-  .two a:hover{
-    color: var(--amarillo)
-  }
-
-  .check{
+ .login-check{
     margin-right: 10px;
     margin-bottom: 18px;
     margin-top: 10px;
@@ -1443,90 +1431,13 @@ input {
 
   .footer-brand-wrapper .logo { margin: 4; }
 
-  .footer-brand-wrapper,
-  .quicklink-wrapper,
-  .footer-bottom .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
   .quicklink-list { margin-bottom: 0; }
 
   .copyright { margin-bottom: 0; }
 
-  .footer-bottom-img { margin-inline: 0; }
-
   .detail-subtitle { --t5: 26px; }
 
   .detail-title { --t1: 50px; }
-
-  .two-col{
-    display: flex;
-    justify-content: space-between;
-    color: var(--blanco);
-    font-size: small;
-    margin-top: 10px;
-    gap: 50px;
-    cursor: pointer;
-  }
-  .two-col .one{
-    display: flex;
-    gap: 5px;
-    max-width: 20px;;
-  }
-  .two a{
-    text-decoration: none;
-    color: var(--blanco);
-  }
-  .two a:hover{
-    color: var(--amarillo)
-  }
-
-  .form-box {
-    width: 100%;
-    margin-top: 10%;
-    margin-left: 20%;
-    margin-right: 30%;
-  }
- 
-  .login-container{
-    width: 95%;
-    margin: auto;
-  }
-
-  .register-container{
-    width: 95%;
-    margin: auto;
-  }
-  
-  .register-container .two-forms {
-    flex-direction: column;
-    gap: 0;
-  }
-
-  .top-form span{
-    color: var(--blanco);
-    font-size: small;
-    padding: 10px 0;
-    display: flex;
-    justify-content: center;
-  }
-  .top-form span a{
-    font-weight: var(--fw-500);
-    color: var(--blanco);
-    margin-left: 5px;
-  }
-  
-  .top-form span a:hover{
-    color: var(--amarillo)
-  }
-  h4{
-    color: var(--blanco);
-    font-size: 30px;
-    text-align: center;
-    padding: 10px 0 30px 0;
-  }
 }
 
 
@@ -1609,7 +1520,6 @@ input {
   }
 
   .service-banner { margin-bottom: 0; }
-
  
   .header-actions .btn-primary {
     display: block;
@@ -1648,18 +1558,6 @@ input {
 
   .movie-detail-banner,
   .details-actions { margin: 0; }
-
-  .form-box {
-    height: 750px;
-  }
-  .register-container, .login-container {
-    width: 100%;
-    padding: 0 20px;
-  }
-  .register-container .two-forms {
-    flex-direction: column;
-    gap: 0;
-  }
 }
 
 
@@ -1714,16 +1612,4 @@ input {
   .movie-detail-content { max-width: 620px; }
 
   .detail-title { --t1: 60px; }
-
-  .form-box {
-    height: 900px;
-  }
-  .register-container, .login-container {
-    width: 100%;
-    padding: 0 20px;
-  }
-  .register-container .two-forms {
-    flex-direction: column;
-    gap: 0;
-  }
 }

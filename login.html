@@ -20,8 +20,11 @@
 -------------------------------------------------->
 
   <link rel="stylesheet" href="./syle/style.css">
+
+      <!--    ICONOS PARA EL FORMULARIO SIN VALIDAR  -->
   <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
-  <link href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" rel="stylesheet">
+  
+      <!--    ICONOS PARA EL FORMULARIO VALIDADO  -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 
@@ -53,10 +56,9 @@
   
           <div class="header-actions"> 
             <form action="" class="search">
-              <input type="text" name="movie-search" placeholder="Búsqueda rápida" class="seach-field" required >
-              <button type="submit" class="search-button"><ion-icon name="search-outline"></ion-icon></button>
-            </form>
-  
+              <input type="movie" name="movie" required placeholder="Búsqueda rápida" class="seach-field">
+              <button type="submit"><ion-icon name="search-outline"></ion-icon></button>
+          </form>
     
   
           <!---------------------------------------------------------------
@@ -184,13 +186,13 @@
             placeholder="Contraseña">
             <i class="bx bx-lock-alt"></i>
           </div>
-          <div class="input-box">
+          <div class="login-input-box">
             <input type="submit" class="submit" value="Ingresar">
           </div>
           <div class="two-col">
             <div class="one">
-              <input type="checkbox" id="login-check" class="check">
-              <label for="login-check" style="white-space: nowrap" class="check"> Recordarme </label>
+              <input type="checkbox" id="login-check" class="login-check">
+              <label for="login-check" style="white-space: nowrap" class="login-check"> Recordarme </label>
             </div>
             <div class="two">
               <a href="#">Olvidaste tu contraseña?</a>
@@ -290,16 +292,6 @@
             La confirmación de contraseña no puede quedar vacía</span>
           </div>
           <div class="two-col">
-            <div class="one">
-              <input 
-              type="checkbox" 
-              id="register-check" 
-              class="check"
-              name="register-check">
-              <label for="register-check" 
-              style="white-space: nowrap" 
-              class="check"> Acepto los Terminos y Condiciones</label>
-            </div>
             <div class="two">
               <a href="#">Terminos & condiciones</a>
             </div>
