@@ -51,19 +51,19 @@ window.addEventListener("load", getMovie);
 
 
 
-document.getElementById("openPopup").addEventListener("click", function () {
-    var videoPopup = document.getElementById("videoPopup");
+document.getElementById("openPopup2.1").addEventListener("click", function () {
+    var videoPopup = document.getElementById("videoPopup2.1");
     var videoIframe = videoPopup.querySelector("iframe");
 
     // Establece la URL del video de YouTube en el iframe
-    videoIframe.src = "https://www.youtube.com/embed/nQb1bqjj52k";
+    videoIframe.src = "https://www.youtube.com/embed/Gd5u_guz9XQ";
 
     // Muestra el video emergente
     videoPopup.style.display = "block";
 });
 
-document.getElementById("closePopup").addEventListener("click", function () {
-    var videoPopup = document.getElementById("videoPopup");
+document.getElementById("closePopup2.1").addEventListener("click", function () {
+    var videoPopup = document.getElementById("videoPopup2.1");
     var videoIframe = videoPopup.querySelector("iframe");
 
     // Detén la reproducción del video
@@ -74,19 +74,19 @@ document.getElementById("closePopup").addEventListener("click", function () {
 });
 
 
-document.getElementById("openPopup2").addEventListener("click", function () {
-    var videoPopup = document.getElementById("videoPopup2");
+document.getElementById("openPopup2.2").addEventListener("click", function () {
+    var videoPopup = document.getElementById("videoPopup2.2");
     var videoIframe = videoPopup.querySelector("iframe");
 
     // Establece la URL del video de YouTube en el iframe
-    videoIframe.src = "https://www.youtube.com/embed/sUKy8Q6mGk0";
+    videoIframe.src = "https://www.youtube.com/embed/sfrZN5QKpQU";
 
     // Muestra el video emergente
     videoPopup.style.display = "block";
 });
 
-document.getElementById("closePopup2").addEventListener("click", function () {
-    var videoPopup = document.getElementById("videoPopup2");
+document.getElementById("closePopup2.2").addEventListener("click", function () {
+    var videoPopup = document.getElementById("videoPopup2.2");
     var videoIframe = videoPopup.querySelector("iframe");
 
     // Detén la reproducción del video

@@ -46,24 +46,24 @@ window.addEventListener("load", getMovie);
 
 
 /******************************************************************************/
-/****************** *******************/
+/****************** TRAILER Y RESEÑA *******************/
 /******************************************************************************/
 
 
 
-document.getElementById("openPopup").addEventListener("click", function () {
-    var videoPopup = document.getElementById("videoPopup");
+document.getElementById("openPopup5.1").addEventListener("click", function () {
+    var videoPopup = document.getElementById("videoPopup5.1");
     var videoIframe = videoPopup.querySelector("iframe");
 
     // Establece la URL del video de YouTube en el iframe
-    videoIframe.src = "https://www.youtube.com/embed/nQb1bqjj52k";
+    videoIframe.src = "https://www.youtube.com/embed/T6CX1sLaBsE";
 
     // Muestra el video emergente
     videoPopup.style.display = "block";
 });
 
-document.getElementById("closePopup").addEventListener("click", function () {
-    var videoPopup = document.getElementById("videoPopup");
+document.getElementById("closePopup5.1").addEventListener("click", function () {
+    var videoPopup = document.getElementById("videoPopup5.1");
     var videoIframe = videoPopup.querySelector("iframe");
 
     // Detén la reproducción del video
@@ -74,19 +74,19 @@ document.getElementById("closePopup").addEventListener("click", function () {
 });
 
 
-document.getElementById("openPopup2").addEventListener("click", function () {
-    var videoPopup = document.getElementById("videoPopup2");
+document.getElementById("openPopup5.2").addEventListener("click", function () {
+    var videoPopup = document.getElementById("videoPopup5.2");
     var videoIframe = videoPopup.querySelector("iframe");
 
     // Establece la URL del video de YouTube en el iframe
-    videoIframe.src = "https://www.youtube.com/embed/sUKy8Q6mGk0";
+    videoIframe.src = "https://www.youtube.com/embed/NgEr0kQXrn4";
 
     // Muestra el video emergente
     videoPopup.style.display = "block";
 });
 
-document.getElementById("closePopup2").addEventListener("click", function () {
-    var videoPopup = document.getElementById("videoPopup2");
+document.getElementById("closePopup5.2").addEventListener("click", function () {
+    var videoPopup = document.getElementById("videoPopup5.2");
     var videoIframe = videoPopup.querySelector("iframe");
 
     // Detén la reproducción del video
