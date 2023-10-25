@@ -727,7 +727,7 @@ DESCRIPCIÓN DE LA PÁGINA
   background-image: linear-gradient(to bottom, rgba(20, 20, 20, 0.534) 0%, rgba(10, 10, 10, 0.932) 100%), url("../img/background.jpg");
   background-size: cover;
   background-position: center;
-  padding-top: 160px;
+  padding-top: 110px;
   padding-bottom: var(--section-padding);
 }
 
