@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <title>Detalles del Usuario</title>
+</head>
+<body>
+    <h1>Detalles del Usuario</h1>
+    <table>
+        <tr>
+            <th>ID</th>
+            <td>{{ user[0] }}</td>
+        </tr>
+        <tr>
+            <th>Usuario</th>
+            <td>{{ user[1] }}</td>
+        </tr>
+        <tr>
+            <th>Correo Electrónico</th>
+            <td>{{ user[2] }}</td>
+        </tr>
+    </table>
+    <a href="{{ url_for('update', user_id=user[0]) }}">Editar</a>
+    <br>
+    <a href="{{ url_for('delete', user_id=user[0]) }}" onclick="return confirm('¿Estás seguro de que deseas eliminar este usuario?')">Eliminar Usuario</a>
+    <br>
+    <a href="{{ url_for('index') }}">Volver a la lista de usuarios</a>
+</body>
+</html>
