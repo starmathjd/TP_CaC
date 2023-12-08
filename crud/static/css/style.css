@@ -7,7 +7,6 @@ body {
 .container {
     max-width: 600px;
     margin: auto;
-    background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     padding: 20px;
     border-radius: 5px;
@@ -105,3 +104,14 @@ a:hover {
     border: 1px solid #f5c6cb;
     border-radius: 5px;
 }
+
+#logo {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 150px; 
+    height: auto; 
+    filter: invert(50%);
+}
+
+
