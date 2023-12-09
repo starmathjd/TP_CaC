@@ -56,7 +56,7 @@ document.getElementById("openPopup1.1").addEventListener("click", function () {
     var videoIframe = videoPopup.querySelector("iframe");
 
     // Establece la URL del video de YouTube en el iframe
-    videoIframe.src = "https://www.youtube.com/embed/u1GdSJGz5Ek";
+    videoIframe.src = "https://www.youtube.com/embed/0Nth2F7KCD8";
 
     // Muestra el video emergente
     videoPopup.style.display = "block";

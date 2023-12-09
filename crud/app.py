@@ -8,7 +8,7 @@ app.config['SECRET_KEY'] = 'a1b2d3e4f5'
 db = mysql.connector.connect(
     host="localhost",
     user="root",
-    password="pass123",
+    password="",
     database="crud_db"
 )
 cursor = db.cursor()
@@ -28,7 +28,8 @@ def create():
         password = request.form['password']
         hashed_password = generate_password_hash(password, method='pbkdf2:sha256')
         cursor.execute("INSERT INTO users (username, email, password) VALUES (%s, %s, %s)",
-                       (username, email, hashed_password))
+               (username, email, hashed_password))
+
         db.commit()
         flash('Usuario creado exitosamente.', 'success')
         return redirect(url_for('index'))
@@ -66,6 +67,23 @@ def delete(user_id):
     db.commit()
     flash('Usuario eliminado exitosamente.', 'success')
     return redirect(url_for('index'))
+
+@app.route('/login', methods=['GET', 'POST'])
+def login():
+    if request.method == 'POST':
+        username = request.form['username']
+        password = request.form['password']
+
+        cursor.execute("SELECT id, username, password FROM users WHERE username = %s", (username,))
+        user = cursor.fetchone()
+
+        if user and check_password_hash(user[2], password):
+            flash('Inicio de sesión exitoso.', 'success')
+            return redirect(url_for('index'))
+        else:
+            flash('Credenciales incorrectas. Inténtelo de nuevo.', 'error')
+
+    return render_template('login.html')
 
 @app.route('/change_password/<int:user_id>', methods=['GET', 'POST'])
 def change_password(user_id):
